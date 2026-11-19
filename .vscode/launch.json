@@ -1,0 +1,24 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ubuntu: Debug hello (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/hello",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Mac: Debug hello (lldb)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/hello",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build"
+    }
+  ]
+}
